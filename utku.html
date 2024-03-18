@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utku Bakay Photography</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
@@ -15,10 +15,10 @@
     <div class="gallery" id="project1">
         <h2>Rembrandt Lighting</h2>
         <div class="project-images">
-            <div class="photo" onclick="openModal('/FOTOS/UTKU_06.jpg', 'Photo 1', 'Photographer: Utku Bakay'); currentSlide(1)">
+            <div class="photo" onclick="openModal('./FOTOS/UTKU_06.jpg', 'Photo 1', 'Photographer: Utku Bakay'); currentSlide(1)">
                 <img src="/FOTOS/UTKU_06.jpg" alt="Photo 1">
             </div>
-            <div class="photo" onclick="openModal('/FOTOS/SEVAL_07.jpg', 'Photo 2', 'Photographer: Seval'); currentSlide(2)">
+            <div class="photo" onclick="openModal('./FOTOS/SEVAL_07.jpg', 'Photo 2', 'Photographer: Seval'); currentSlide(2)">
                 <img src="/FOTOS/SEVAL_07.jpg" alt="Photo 2">
             </div>
             <!-- Add more photos for Project 1 -->
@@ -28,10 +28,10 @@
     <div class="gallery" id="project2">
         <h2>Project 2</h2>
         <div class="project-images">
-            <div class="photo" onclick="openModal('/FOTOS/SEVAL_01.jpg', 'Photo 3', 'Photographer: Seval'); currentSlide(1)">
+            <div class="photo" onclick="openModal('./FOTOS/SEVAL_01.jpg', 'Photo 3', 'Photographer: Seval'); currentSlide(1)">
                 <img src="/FOTOS/SEVAL_01.jpg" alt="Photo 3">
             </div>
-            <div class="photo" onclick="openModal('/FOTOS/SEVAL_02.jpg', 'Photo 4', 'Photographer: Seval'); currentSlide(2)">
+            <div class="photo" onclick="openModal('./FOTOS/SEVAL_02.jpg', 'Photo 4', 'Photographer: Seval'); currentSlide(2)">
                 <img src="/FOTOS/SEVAL_02.jpg" alt="Photo 4">
             </div>
             <!-- Add more photos for Project 2 -->
@@ -45,17 +45,17 @@
         <span class="close" onclick="closeModal()">&times;</span>
         <div class="modal-content">
             <div class="mySlides">
-                <img id="modal-img" src="/FOTOS/UTKU_06.jpg" style="width:100%">
+                <img id="modal-img" src="./FOTOS/UTKU_06.jpg" style="width:100%">
                 <div id="caption"></div>
             </div>
             <div class="mySlides">
-                <img id="modal-img" src="/FOTOS/SEVAL_07.jpg" style="width:100%">
+                <img id="modal-img" src="./FOTOS/SEVAL_07.jpg" style="width:100%">
                 <div id="caption"></div>
             </div>
             <!-- Add more slides as needed -->
         </div>
     </div>
 
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
