@@ -1,0 +1,89 @@
+/* Header styles */
+header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    margin-bottom: 20px; /* Add some space between galleries */
+}
+
+.gallery h2 {
+    font-family: Arial, sans-serif; /* Change the font-family for project titles */
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute images evenly */
+}
+
+.photo {
+    width: 48%; /* Adjust width for two images to fit in one row */
+    margin-bottom: 10px; /* Add some space between images */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .photo {
+        width: 100%; /* Make images full width on smaller screens */
+    }
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 700px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
